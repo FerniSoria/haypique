@@ -1,0 +1,70 @@
+.header__logo{
+    display: block;
+    width: 10em;
+    margin-left: 60%;
+    margin-top: 6%;
+    animation-duration: 8s;
+    animation-name: logo;
+    animation-iteration-count: infinite;
+}
+
+.header__proAnglers{
+    color: rgb(250, 8, 8);
+    margin-left: 63.5%;
+    margin-top: -1%;
+   transition: all 3s ease;
+    &:hover{
+        font-size: 20px;
+        transform: scale(1.3, 1.4)
+}
+}
+.grid__imagen{
+    border-radius: 5px 5px 0 0;   
+    width:100%;
+    padding: 0px; 
+    object-fit: cover;
+    display: block;   
+}
+@keyframes logo {
+    0% {
+        opacity: 0;
+        }
+    50% {
+        opacity: 1;
+        }
+    100% {
+      opacity: 0;
+        }
+}
+.grid__imagen1{
+    border-radius: 5px;   
+    width: 15em;
+    padding: 0px; 
+    object-fit: cover;
+    display: block;
+    
+}
+img{ 
+    width: 100%;
+}
+.grid1__iconos{
+    width: 20px;
+}
+/* Mixins */ 
+@mixin img {
+    width: 13em;
+    margin-bottom: 1.2em;
+    margin-top: 1.2em;
+}
+.container__img{
+   @include img;
+    float: left;
+    margin-right: 1.2em;
+    
+}
+.container__img1{
+    @include img;
+    float: right;
+    margin-left: 1.2em;
+  
+}

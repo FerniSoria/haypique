@@ -1,0 +1,49 @@
+.contenedor{
+    display: block;
+    width: 30%;
+    margin: 20px auto;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, .75);
+    border-radius: 10px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-column-gap: 5rem;
+    div{
+        padding: 1em;
+        margin: 3em;
+        align-content: center auto;
+        &:hover{ 
+                box-shadow: 0 20px 40px;}
+    }
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+    div{
+        padding: 1em;
+        margin: 2em;
+        align-content: center auto;
+    }
+}
+.grid1__li__nosotros{
+
+    display: inline-block;
+    width: 15em;
+    position: relative;
+    font-size: 1rem;
+}
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 1em;
+    background-color: white;
+    margin-top: 6em;
+    border-top: 0.5em solid rgb(250, 8, 8);
+
+}

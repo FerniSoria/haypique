@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #f5f5f5;
+  font-family: sans-serif; }
+
+.grid__links {
+  display: block;
+  background: black;
+  padding: 13px 0;
+  color: #fafaf6;
+  border-radius: 5px;
+  text-align: center;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-decoration: none;
+  margin-bottom: 4px;
+  color: #fa0808;
+  transition: all 1s ease; }
+  .grid__links:hover {
+    transform: scale(1.1, 1.1); }
+
+.row {
+  display: flex;
+  padding: 5px; }
+
+.column {
+  flex: 25%;
+  padding: 5px; }
+  .column img {
+    margin-top: 5px; }
+
+footer {
+  background-color: black;
+  text-align: center;
+  height: 36px;
+  color: white; }
+
+.footer__iconos {
+  width: 30px;
+  margin-top: 3px;
+  transition: all 1s ease; }
+  .footer__iconos:hover {
+    transform: scale(1.1, 1.1); }
+
+.paquetes {
+  color: white; }
+
+header {
+  color: black;
+  background-image: url(../portada1r.jpg);
+  height: 30rem;
+  background-position: left top;
+  background-attachment: fixed;
+  background-size: contain;
+  font-family: 'Pacifico', cursive; }
+
+nav {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  margin-top: 8.1rem;
+  height: 2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+ul {
+  list-style: none;
+  font-size: 0px; }
+  ul ul {
+    position: absolute;
+    display: none; }
+    ul ul li {
+      display: block; }
+      ul ul li:hover ul {
+        display: block;
+        background-color: black; }
+  ul li {
+    display: inline-block;
+    width: 10em;
+    position: relative;
+    font-size: 1.4rem; }
+    ul li a {
+      color: #fa0808;
+      text-decoration: none;
+      padding: 10px; }
+      ul li a:hover {
+        color: #eed04c; }
+
+.header__logo {
+  display: block;
+  width: 10em;
+  margin-left: 60%;
+  margin-top: 6%;
+  animation-duration: 8s;
+  animation-name: logo;
+  animation-iteration-count: infinite; }
+
+.header__proAnglers {
+  color: #fa0808;
+  margin-left: 63.5%;
+  margin-top: -1%;
+  transition: all 3s ease; }
+  .header__proAnglers:hover {
+    font-size: 20px;
+    transform: scale(1.3, 1.4); }
+
+.grid__imagen {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  padding: 0px;
+  object-fit: cover;
+  display: block; }
+
+@keyframes logo {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.grid__imagen1 {
+  border-radius: 5px;
+  width: 15em;
+  padding: 0px;
+  object-fit: cover;
+  display: block; }
+
+img {
+  width: 100%; }
+
+.grid1__iconos {
+  width: 20px; }
+
+/* Mixins */
+.container__img {
+  width: 13em;
+  margin-bottom: 1.2em;
+  margin-top: 1.2em;
+  float: left;
+  margin-right: 1.2em; }
+
+.container__img1 {
+  width: 13em;
+  margin-bottom: 1.2em;
+  margin-top: 1.2em;
+  float: right;
+  margin-left: 1.2em; }
+
+.contenedor {
+  display: block;
+  width: 30%;
+  margin: 20px auto;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.75);
+  border-radius: 10px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  grid-column-gap: 5rem; }
+  .grid div {
+    padding: 1em;
+    margin: 3em;
+    align-content: center auto; }
+    .grid div:hover {
+      box-shadow: 0 20px 40px; }
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 2rem; }
+  .grid1 div {
+    padding: 1em;
+    margin: 2em;
+    align-content: center auto; }
+
+.grid1__li__nosotros {
+  display: inline-block;
+  width: 15em;
+  position: relative;
+  font-size: 1rem; }
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1em;
+  background-color: white;
+  margin-top: 6em;
+  border-top: 0.5em solid #fa0808; }
+
+.container__imga {
+  width: 6.5em;
+  border: black 3px solid;
+  float: left; }
+
+.container__imgb {
+  width: 19em;
+  border: steelblue 5px dotted;
+  float: right; }
+
+.container__imgc {
+  width: 13em;
+  float: left; }
+
+h3 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 1rem; }
+
+.texto1 {
+  font-size: 1rem; }
+
+.texto2 {
+  font-size: 2rem; }
+
+.texto3 {
+  font-size: 3rem; }
+
+.grid__notas {
+  text-align: center;
+  margin: 20px 0 10px;
+  word-spacing: 0.2rem;
+  line-height: 1.3rem; }
+
+h1 {
+  color: #0e0101;
+  text-align: center;
+  font-size: 4rem;
+  font-family: sans-serif; }
+
+h2 {
+  margin-top: 2%;
+  text-align: center; }
+
+.grid__titulo {
+  font-size: 20px; }
+
+.grid1__listado {
+  font-size: 0.5em; }
+
+.grid1__titulo {
+  font-size: 1.5em;
+  text-align: left;
+  font-style: italic;
+  padding-bottom: 0.2em; }
+
+.TextoGaleriaFotos {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.header__titulo {
+  color: #000105;
+  text-align: end;
+  margin-right: 1rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.container__titulo {
+  font-size: 2.5em;
+  margin-bottom: 2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.container p {
+  margin-top: 20px;
+  word-spacing: 0.2rem;
+  line-height: 1.4rem; }
+
+/*MEDIA O RESPONSIVE O MOBIL FIRST*/
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 80%; }
+  header {
+    height: 9em; }
+  nav {
+    background-color: black;
+    text-align: center;
+    margin-top: 2.1rem;
+    height: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%; }
+  li {
+    display: inline-block;
+    width: 13em;
+    position: relative;
+    font-size: 0.4rem; }
+  h1 {
+    color: #080000;
+    font-size: 1px; }
+  .header__logo {
+    display: block;
+    width: 3em;
+    margin-left: 50%;
+    margin-top: 6%; }
+  h1 {
+    font-size: 12px; }
+  .header__proAnglers {
+    margin-left: 45%;
+    color: red; } }
+
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    background-size: fixed; }
+  h1 {
+    color: blue; }
+  header {
+    height: 17em; }
+  .header__logo {
+    display: block;
+    width: 3em;
+    margin-left: 50%;
+    margin-top: 6%; }
+  nav {
+    background-color: black;
+    text-align: center;
+    margin-top: 6em;
+    height: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%; }
+  h1 {
+    font-size: 12px; }
+  .header__proAnglers {
+    margin-left: 45%; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .grid {
+    background-size: fixed; } }

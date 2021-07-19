@@ -1,0 +1,97 @@
+@import "generales";
+@import "menu";
+@import "imagenes";
+@import "grilla";
+@import "variables";
+@import "textos";
+
+
+/*MEDIA O RESPONSIVE O MOBIL FIRST*/
+@media screen and (min-width: 360px) and (max-width: 640px)
+    {
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 80%;
+        
+    }
+    header{
+        height: 9em;
+        
+    }
+    nav{
+        background-color: black; 
+        text-align: center;
+        margin-top: 2.1rem;
+        height: 1em;
+        font-family: 'Times New Roman', Times, serif;
+        width: 100%;
+        
+    }   
+    li{
+        display: inline-block;
+        width: 13em;
+        position: relative;
+        font-size: 0.4rem;
+    }
+    h1{color: rgb(8, 0, 0);
+        font-size: 1px;
+}
+    .header__logo{
+        display: block;
+        width: 3em;
+        margin-left: 50%;
+        margin-top: 6%;
+    
+
+    }
+    h1{
+        font-size: 12px;
+    }
+    .header__proAnglers{
+        margin-left: 45%;
+        color: red;
+    }
+    
+}
+@media only screen and (min-width: 640px) and (max-width: 768px)
+
+    {
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+        background-size: fixed;
+    }
+    h1{ color: blue;}
+    header{
+        height: 17em;
+      
+    }
+    .header__logo{
+        display: block;
+        width: 3em;
+        margin-left: 50%;
+        margin-top: 6%;
+    } 
+    nav{
+        background-color: black;
+        text-align: center;
+        margin-top: 6em;
+        height: 1em;
+        font-family: 'Times New Roman', Times, serif;
+        width: 100%;
+    }
+    h1{
+        font-size: 12px;
+    }
+    .header__proAnglers{
+        margin-left: 45%;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1024px)
+    {
+    .grid{
+      
+        background-size: fixed;
+    }
+    
+}
