@@ -4,6 +4,8 @@
 @import "grilla";
 @import "variables";
 @import "textos";
+@import "paquetes";
+
 
 
 /*MEDIA O RESPONSIVE O MOBIL FIRST*/
@@ -22,7 +24,7 @@
     nav{
         background-color: black; 
         text-align: center;
-        margin-top: 2.1rem;
+        margin-top: 2.1em;
         height: 1em;
         font-family: 'Times New Roman', Times, serif;
         width: 100%;
@@ -32,7 +34,7 @@
         display: inline-block;
         width: 13em;
         position: relative;
-        font-size: 0.4rem;
+        font-size: 0.4em;
     }
     h1{color: rgb(8, 0, 0);
         font-size: 1px;
@@ -52,6 +54,19 @@
         margin-left: 45%;
         color: red;
     }
+
+    .contenedorpaquete{
+        width: 90%;
+        max-width: 62.5em;
+        margin: 1.25em auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr, 1fr, 1fr, 1fr);
+        grid-template-areas: 
+            "logopaquete navpaquete navpaquete navpaquete"
+            "incluye incluye comodidades comodidades"
+            "fotospaquete fotospaquete fotospaquete fotospaquete"
+            "footerpaquete footerpaquete footerpaquete footerpaquete";
+        grid-gap: 0.625em;}
     
 }
 @media only screen and (min-width: 640px) and (max-width: 768px)
@@ -61,7 +76,14 @@
         grid-template-columns: repeat(2,1fr);
         background-size: fixed;
     }
-    h1{ color: blue;}
+    .grid2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr;
+        grid-column-gap: 3em;
+    }
+
+    h1{ color: white;}
     header{
         height: 17em;
       
@@ -73,10 +95,10 @@
         margin-top: 6%;
     } 
     nav{
-        background-color: black;
+        background-color: #2b455c;
         text-align: center;
         margin-top: 6em;
-        height: 1em;
+        height: 3em;
         font-family: 'Times New Roman', Times, serif;
         width: 100%;
     }
@@ -86,6 +108,18 @@
     .header__proAnglers{
         margin-left: 45%;
     }
+    .contenedorpaquete{
+        width: 90%;
+        max-width: 62.5em;
+        margin: 1.25em auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr, 1fr, 1fr, 1fr);
+        grid-template-areas: 
+            "logopaquete navpaquete navpaquete navpaquete"
+            "incluye incluye comodidades comodidades"
+            "fotospaquete fotospaquete fotospaquete fotospaquete"
+            "footerpaquete footerpaquete footerpaquete footerpaquete";
+        grid-gap: 0.625em;}
 }
 @media only screen and (min-width:769px) and (max-width:1024px)
     {

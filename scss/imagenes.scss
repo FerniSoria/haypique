@@ -1,8 +1,8 @@
 .header__logo{
     display: block;
     width: 10em;
-    margin-left: 60%;
-    margin-top: 6%;
+    margin-left: 62%;
+    margin-top: 13%;
     animation-duration: 8s;
     animation-name: logo;
     animation-iteration-count: infinite;
@@ -24,6 +24,11 @@
     padding: 0px; 
     object-fit: cover;
     display: block;   
+}
+.grid2__imagen{
+    width: 22.5em;
+    height: 35.063em;
+    
 }
 @keyframes logo {
     0% {
@@ -52,7 +57,7 @@ img{
 }
 /* Mixins */ 
 @mixin img {
-    width: 13em;
+  
     margin-bottom: 1.2em;
     margin-top: 1.2em;
 }
@@ -60,11 +65,14 @@ img{
    @include img;
     float: left;
     margin-right: 1.2em;
+    width: 25em,
+
     
 }
 .container__img1{
     @include img;
     float: right;
     margin-left: 1.2em;
+    width: 20em;
   
 }

@@ -1,9 +1,9 @@
 $ancho: 13em;
 $headings:(
-    h1: 4rem,
-    h2: 2rem,
-    h3: 1.5rem,
-    h4: 1rem,
+    h1: 4em,
+    h2: 2em,
+    h3: 1.5em,
+    h4: 1em,
 );
 
 /*OPERACIONES*/
@@ -38,5 +38,5 @@ h4{
 @for $i from 1 through 3{
     .texto#{$i}
     {
-        font-size: 1rem * $i;}
+        font-size: 1em * $i;}
     }

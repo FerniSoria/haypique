@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 1fr;
-    grid-column-gap: 5rem;
+    grid-column-gap: 5em;
     div{
         padding: 1em;
         margin: 3em;
@@ -23,19 +23,30 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-column-gap: 2rem;
+    grid-column-gap: 2em;
     div{
         padding: 1em;
         margin: 2em;
         align-content: center auto;
     }
 }
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr;
+    grid-column-gap: 3em;
+    div{
+        padding: 1em;
+        margin: 3em;
+        align-content: center auto;
+    }
+}
 .grid1__li__nosotros{
 
     display: inline-block;
-    width: 15em;
+    width: 15rem;
     position: relative;
-    font-size: 1rem;
+    font-size: 16px;
 }
 .container{
     width: 100%;
@@ -44,6 +55,6 @@
     padding: 1em;
     background-color: white;
     margin-top: 6em;
-    border-top: 0.5em solid rgb(250, 8, 8);
+    border-top: 0.5em solid rgb(43, 69, 92);
 
 }
