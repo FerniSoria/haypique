@@ -11,7 +11,7 @@
 h1{
     color:rgb(14, 1, 1);
     text-align: center;
-    font-size: 4em;
+    font-size: 4rem;
     font-family: sans-serif;
 }
 
@@ -52,6 +52,7 @@ h4{
     text-align: end;
     margin-right: 1em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 400%;
     
     }
 .container__titulo{
@@ -73,4 +74,7 @@ p{
 .iniciales{
     font-size: 3em;
     display:inline;
+}
+.grid2__parrafo{
+    text-align: center;
 }

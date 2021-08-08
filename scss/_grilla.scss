@@ -33,9 +33,10 @@
 }
 .grid2{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 0.5fr;
-    grid-column-gap: 3em;
+
+    
     div{
         padding: 1em;
         margin: 3em;
