@@ -335,7 +335,7 @@ h4 {
   line-height: 1.4em; }
 
 p {
-  text-align: center; }
+  text-align: left; }
 
 .iniciales {
   font-size: 3em;
@@ -344,6 +344,9 @@ p {
 .grid2__parrafo {
   text-align: center; }
 
+/*p::first-letter{
+    font-size: 2.5rem;
+}*/
 .imagenespaquete {
   width: 13.75em;
   height: 9.375em; }
@@ -383,13 +386,13 @@ p {
 .incluye {
   grid-area: incluye;
   border-radius: 0.313em;
-  padding: 1em;
+  padding: 1rem;
   width: 100%; }
 
 .comodidades {
   grid-area: comodidades;
-  border-radius: 5.008px;
-  padding: 16px; }
+  border-radius: 0.313rem;
+  padding: 1rem; }
 
 .fotospaquete {
   grid-area: fotospaquete;
@@ -442,7 +445,8 @@ p {
 
 .texto__paquete {
   font-size: 1em;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  text-align: center; }
 
 .paqueteul paqueteli {
   position: relative;
@@ -478,6 +482,18 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     width: 100%; }
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    margin-top: 2em; }
+    .grid1 div {
+      padding: 1em;
+      margin: 1em;
+      align-content: center auto; }
+  .grid1__li__nosotros {
+    width: 50%; }
   /*nav{
         text-align: center;
         margin-top: 3.1em;
@@ -543,6 +559,18 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     width: 100%; }
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    margin-top: 2em; }
+    .grid1 div {
+      padding: 1em;
+      margin: 1em;
+      align-content: center auto; }
+  .grid1__li__nosotros {
+    width: 50%; }
   .grid2 {
     display: grid;
     grid-template-columns: 1fr;
@@ -553,13 +581,18 @@ p {
         font-size: 1.2rem;
     }*/
   .contenedorpaquete {
-    width: 90%;
+    width: 80%;
     max-width: 62.5em;
     margin: 1.25em auto;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(1fr, 1fr, 1fr, 1fr);
-    grid-template-areas: "logopaquete navpaquete navpaquete navpaquete" "incluye incluye comodidades comodidades" "fotospaquete fotospaquete fotospaquete fotospaquete" "footerpaquete footerpaquete footerpaquete footerpaquete";
-    grid-gap: 0.625em; } }
+    grid-template-rows: repeat(1fr);
+    grid-template-areas: "logopaquete"  "navpaquete" "incluye incluye"  "comodidades comodidades" "fotospaquete fotospaquete"  "fotospaquete fotospaquete" "footerpaquete footerpaquete footerpaquete footerpaquete";
+    grid-gap: 0.625em; }
+  /* AGREGUE ESTO*/
+  .paqueteul {
+    padding-inline-start: 0em; }
+  .incluye {
+    padding: 0.1em; } }
 
 @media only screen and (min-width: 792px) and (max-width: 1007px) {
   header {
@@ -581,7 +614,17 @@ p {
         font-size: 1.3;
     }*/
   .grid {
-    grid-column-gap: 1em; } }
+    grid-column-gap: 1em; }
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 1em;
+    margin-top: 2em; }
+    .grid1 div {
+      padding: 1em;
+      margin: 1em;
+      align-content: center auto; } }
 
 @media only screen and (min-width: 1008px) and (max-width: 1199px) {
   /*nav{
@@ -591,6 +634,18 @@ p {
     font-size: 350%; }
   .grid {
     background-size: fixed; }
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 1em;
+    margin-top: 2em; }
+    .grid1 div {
+      padding: 1em;
+      margin: 1em;
+      align-content: center auto; }
+  .grid1__li__nosotros {
+    width: 50%; }
   .header__logo {
     display: block;
     width: 7%;
@@ -623,7 +678,7 @@ p {
     width: 7em;
     margin-left: 65%; }
   .header__proAnglers {
-    margin-left: 37%; }
+    margin-left: 66%; }
   /*nav{
         margin-top: 2.2rem;
     }*/
