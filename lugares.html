@@ -11,6 +11,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
         </style>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
          <link rel="stylesheet" href="css/estilo.css">
     <title>Paquete</title>
 </head>
@@ -19,13 +20,30 @@
         <div><h1 class="header__titulo">Site de Pesca</h1></div>
         <div><img src="imagenes/logoboyita.png" alt="logo boya de pesca" class="header__logo"></div>
         <div><p class="header__proAnglers">Pro Anglers</p></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="galeria.html">Galería de Fotos</a></li>
-                <li><a href="lugares.html">Lugares y Guias</a>
-                <li><a href="nosotros.html">Nosotros</a></li>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" id="proanglers__navbar" href="#">Pro Anglers <img src="imagenes/logoboyitab.png" class="logo__nav" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item letra" id="letra">
+                    <a class="nav-link" id="nav__letra" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="nav__letra" href="galeria.html">Galeria de Fotos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="nav__letra" href="lugares.html">Lugares y Guias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="nav__letra" href="nosotros.html">Nosotros</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
         <section>
             <div class="grid2">
@@ -34,13 +52,13 @@
                     <img src="imagenes/mapa1.jpg" usemap="#image-map1" alt="" class="grid2__imagen">
                     <h4>Pasar el Mousse por las Zonas de Mayor Pesca</h4>
                     <h4>O clickea en los Enlaces</h4>
-                    <p> Ver Paquete <a class="grid2__a" href="#cayasta"> Cayasta</a></li></p>
-                    <p> Ver Paquete<a class="grid2__a" href="#helvecia"> Helvecia</a></li></p>
-                    <p> Ver Paquete<a class="grid2__a" href="#santaelena"> Santa Elena</a></li></p>
-                    <p> Ver Paquete<a class="grid2__a" href="#lapaz"> La Paz</a></li></p>
-                    <p> Ver Paquete<a class="grid2__a" href="#sanjavier"> San Javier</a></li></p>
-                    <p> Ver Paquete<a class="grid2__a" href="#esquina"> Esquina</a></li></p>
-                    <p> Ver Paquete<a class="grid2__a" href="#alejandra"> Alejandra</a></li></p>
+                    <p class="grid2__parrafo"> Ver Paquete <a class="grid2__a" href="#cayasta"> Cayasta</a></li></p>
+                    <p class="grid2__parrafo"> Ver Paquete<a class="grid2__a" href="#helvecia"> Helvecia</a></li></p>
+                    <p class="grid2__parrafo"> Ver Paquete<a class="grid2__a" href="#santaelena"> Santa Elena</a></li></p>
+                    <p class="grid2__parrafo"> Ver Paquete<a class="grid2__a" href="#lapaz"> La Paz</a></li></p>
+                    <p class="grid2__parrafo"> Ver Paquete<a class="grid2__a" href="#sanjavier"> San Javier</a></li></p>
+                    <p class="grid2__parrafo"> Ver Paquete<a class="grid2__a" href="#esquina"> Esquina</a></li></p>
+                    <p class="grid2__parrafo"> Ver Paquete<a class="grid2__a" href="#alejandra"> Alejandra</a></li></p>
 
                     
                      
@@ -57,11 +75,7 @@
                     </map>
                 </div>
         
-                <div>
-                    <img src="imagenes/mapa2.jpg" usemap="#image-map2" alt="mapa zona alta del parana" class="grid2__imagen">
-                    <h4>Pasar el Mousse por las Zonas de Mayor Pesca</h4>
-                    <h4>O clickea en los Enlaces</h4>
-                </div>
+                
     
             </div>
         </section>
@@ -162,18 +176,18 @@
         
     </div>
     <div class="contenedorpaquete">
-        <section class="logopaquete"><img src="imagenes/logoboyita.png" class="logopescado" alt="isologo pro Anglers> <h3 class="proanglers1">Pro Anglers</h3></section>
+        <section class="logopaquete"><img src="imagenes/logoboyita.png" class="logopescado" alt=""> <h3 class="proanglers1">Pro Anglers</h3></section>
         <nav class="navpaquete"><H2 class="paqueteh1" id="santaelena">PAQUETE SANTA ELENA</H2></nav>
         <section class="incluye">
             <H3 class="paqueteh3">INCLUYE</h3>
             <p>
                 <ul class="paqueteul">   <br>
-                <li class="paqueteli">3 Noches Cabañas SerraSalmus</li>
-                <li class="paqueteli">2 Jornadas Completas Pesca con Esteban Legler</li> 
-                <li class="paqueteli">Carnada y Combustible Trukker</li>  
-                <li class="paqueteli">Almuerzo Isla, Pescado Frito o Asado</li>
-                <li class="paqueteli">Desayuno de Campo Completo en SerraSalmus</li>
-                <li class="paqueteli">1 Green Feed Golf Club </li>
+                <li class="paqueteli"><img src="imagenes/alojamiento.png" alt="" class="grid1__iconos"> 3 Noches Cabañas SerraSalmus</li>
+                <li class="paqueteli"><img src="imagenes/lancha-rapida.png" alt="" class="grid1__iconos"> 2 Jornadas Completas Pesca con Esteban Legler</li> 
+                <li class="paqueteli"><img src="imagenes/anzuelo-de-pesca.png" alt="" class="grid1__iconos"> Carnada y Combustible Trukker</li>  
+                <li class="paqueteli"><img src="imagenes/comer.png" alt="" class="grid1__iconos"> Almuerzo Isla, Pescado Frito o Asado</li>
+                <li class="paqueteli"><img src="imagenes/Breakfast_26375.ico" alt="" class="grid1__iconos"> Desayuno de Campo Completo en SerraSalmus</li>
+                <li class="paqueteli"><img src="imagenes/golf.png" alt="" class="grid1__iconos"> 1 Green Feed Golf Club </li>
                 
                 </ul>
             </p>
@@ -182,12 +196,12 @@
             <h3 class="paqueteh3">COMODIDADES</h3>
             <p>
                 <ul class="paqueteul"> <br>
-                    <li class="paqueteli">Habitaciones con Aire Acondicionado y Calefaccion Central</li>
-                    <li class="paqueteli">Open Bar 24 Hs</li>
-                    <li class="paqueteli">Wifi</li>
-                    <li class="paqueteli">Sala de Lectura con Hogar</li>
-                    <li class="paqueteli">Quincho Completo con Asador</li>
-                    <li class="paqueteli">Pileta con Solarium</li>
+                    <li class="paqueteli"><img src="imagenes/cama-matrimonial.png" alt="" class="grid1__iconos"> Habitaciones con Aire Acondicionado y Calefaccion Central</li>
+                    <li class="paqueteli"><img src="imagenes/salud.png" alt="" class="grid1__iconos"> Open Bar 24 Hs</li>
+                    <li class="paqueteli"><img src="imagenes/wifi.png" alt="" class="grid1__iconos"> Wifi</li>
+                    <li class="paqueteli"><img src="imagenes/libro.png" alt="" class="grid1__iconos"> Sala de Lectura con Hogar</li>
+                    <li class="paqueteli"><img src="imagenes/pez1.png" alt="" class="grid1__iconos"> Quincho Completo con Asador</li>
+                    <li class="paqueteli"><img src="imagenes/piscina.png" alt="" class="grid1__iconos"> Pileta con Solarium</li>
                 </ul>
             </p>
         </Section>
@@ -199,7 +213,7 @@
                 <img src="imagenes/santaelena-habitacion.jpg" class="imagenespaquete" alt="habitacion serrasalmus">
             </div>
             <div class="foto">
-                <img src="imagenes/santaelena-dorado.jpg" class="imagenespaquete" alt="dorado en santa elena>
+                <img src="imagenes/santaelena-dorado.jpg" class="imagenespaquete" alt="dorado en santa elena">
             </div>
             <div class="foto">
                 <img src="imagenes/santaelena (6).jpg" class="imagenespaquete" alt="pesca de dorados en santa elena">
@@ -215,12 +229,12 @@
             <H3 class="paqueteh3">INCLUYE</h3>
             <p>
                 <ul class="paqueteul">   <br>
-                <li class="paqueteli">3 Noches Hotel La Cautiva de Ramirez</li>
-                <li class="paqueteli">2 Jornadas de Pesca con Adrian Beliz</li> 
-                <li class="paqueteli">Desayuno Completo Hotel</li>  
-                <li class="paqueteli">1 Cena con bebida sin Alcochol en Restaurant Garibaldi</li>
-                <li class="paqueteli">Almuerzos en Isla</li>
-                <li class="paqueteli">Carnada y Combustibles Incluidos</li>
+                <li class="paqueteli"><img src="imagenes/alojamiento.png" alt="" class="grid1__iconos"> 3 Noches Hotel La Cautiva de Ramirez</li>
+                <li class="paqueteli"><img src="imagenes/lancha-rapida.png" alt="" class="grid1__iconos"> 2 Jornadas de Pesca con Adrian Beliz</li> 
+                <li class="paqueteli"><img src="imagenes/Breakfast_26375.ico" alt="" class="grid1__iconos"> Desayuno Completo Hotel</li>  
+                <li class="paqueteli"><img src="imagenes/comer.png" alt="" class="grid1__iconos"> 1 Cena con bebida sin Alcochol en Restaurant Garibaldi</li>
+                <li class="paqueteli"><img src="imagenes/carne.png" alt="" class="grid1__iconos"> Almuerzos en Isla</li>
+                <li class="paqueteli"><img src="imagenes/" alt="" class="grid1__iconos"> Carnada y Combustibles Incluidos</li>
                 
                 </ul>
             </p>
@@ -229,12 +243,12 @@
             <h3 class="paqueteh3">COMODIDADES</h3>
             <p>
                 <ul class="paqueteul"> <br>
-                    <li class="paqueteli">Habitaciones con Aire Acondicionado y Calefaccion</li>
-                    <li class="paqueteli">Bar y Restaurant dentro del Hotel</li>
-                    <li class="paqueteli">Wifi</li>
-                    <li class="paqueteli">Estacionamiento</li>
-                    <li class="paqueteli">Sala de Juegos</li>
-                    <li class="paqueteli">Piscina con Solarium</li>
+                    <li class="paqueteli"><img src="imagenes/calidad-del-aire.png" alt="" class="grid1__iconos"> Habitaciones con Aire Acondicionado y Calefaccion</li>
+                    <li class="paqueteli"><img src="imagenes/espiritu.png" alt="" class="grid1__iconos"> Bar y Restaurant dentro del Hotel</li>
+                    <li class="paqueteli"><img src="imagenes/wifi.png" alt="" class="grid1__iconos"> Wifi</li>
+                    <li class="paqueteli"><img src="imagenes/marcador-de-posicion.png" alt="" class="grid1__iconos"> Estacionamiento</li>
+                    <li class="paqueteli"><img src="imagenes/sala-de-chat.png" alt="" class="grid1__iconos"> Sala de Juegos</li>
+                    <li class="paqueteli"><img src="imagenes/piscina.png" alt="" class="grid1__iconos"> Piscina con Solarium</li>
                 </ul>
             </p>
         </Section>
@@ -293,7 +307,7 @@
                 <img src="imagenes/sanjavier-pileta.jpg" class="imagenespaquete" alt="pileta en lo del Nono Luis">
             </div>
             <div class="foto">
-                <img src="imagenes/sanjavier-dorado.jfif" class="imagenespaquete" alt="dorados en san Javier>
+                <img src="imagenes/sanjavier-dorado.jfif" class="imagenespaquete" alt="dorados en san Javier">
             </div>
             <div class="foto">
                 <img src="imagenes/sanjavier-doradaso.jfif" class="imagenespaquete" alt="doradaso en san Javier">
@@ -343,7 +357,7 @@
                 <img src="imagenes/esquina-bagre.jpg" class="imagenespaquete" alt="pescando bagre en esquina">
             </div>
             <div class="foto">
-                <img src="imagenes/esquina-surubi.jpg" class="imagenespaquete" alt="terrible surubi en la paz>
+                <img src="imagenes/esquina-surubi.jpg" class="imagenespaquete" alt="terrible surubi en la paz">
             </div>
         </section>
         <section class="footerpaquete"><h3 class="paqueteh3">COSTOS</h3> <p class="texto__paquete">Abonando hasta el 28 de Septiembre, $2000 Dolares(ctdo Eft) Con Tarjetas 20% Interes hasta en 12 Cuotas</p></section>
@@ -387,16 +401,22 @@
                 <img src="imagenes/amazonascabana.jpg" class="imagenespaquete" alt="">
             </div>
             <div class="foto">
-                <img src="imagenes/amazonasrio.jpg" class="imagenespaquete" alt="">
+                <img src="imagenes/amazonastucu2.jpg" class="imagenespaquete" alt="amazonas pesca en el rio">
             </div>
             <div class="foto">
-                <img src="imagenes/amazonastucu2.jpg" class="imagenespaquete" alt="">
+                <img src="imagenes/amazonas2.jpg" class="imagenespaquete" alt="">
             </div>
         </section>
         <section class="footerpaquete"><h3 class="paqueteh3">COSTOS</h3> <p class="texto__paquete">Abonando hasta el 28 de Septiembre, $2000 Dolares(ctdo Eft) Con Tarjetas 20% Interes hasta en 12 Cuotas</p></section>
         
     </div>
-    <footer> </footer>
-
+    <footer class="footer">
+        <a href="https://facebook.com/fersoria" target="_blank" rel="noopener"><img src="imagenes/facebook.png" alt="facebook" class="footer__iconos"></a>
+        <a href="https://twiter.com" target="_blank" rel="noopener"><img src="imagenes/twitter.png" alt="twiter" class="footer__iconos"></a>
+        <a href="mailto:fjsoria@hotmail.com" target="_blank" rel="noopener"><img src="imagenes/email.png" alt="escribinos" class="footer__iconos"></a>
+        <a href="https://youtube.com/results?search_query=pesca+dorados" target="_blank" rel="noopener"><img src="imagenes/youtube.png" alt="miranos" class="footer__iconos"></a>
+        <a href="https://soriafer.blogspot.com/" target="_blank" rel="noopener"><img src="imagenes/blogspot.png" alt="blog" class="footer__iconos"></a>    
+    </footer>  
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
