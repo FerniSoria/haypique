@@ -183,7 +183,8 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-column-gap: 2em; }
+  grid-column-gap: 2em;
+  margin-top: 2em; }
   .grid1 div {
     padding: 1em;
     margin: 2em;
@@ -261,6 +262,11 @@ h2 {
   margin-top: 2%;
   text-align: center; }
 
+h4 {
+  font-size: .7em;
+  font-style: italic;
+  text-align: center; }
+
 .grid__titulo {
   font-size: 20px; }
 
@@ -295,6 +301,13 @@ h2 {
   margin-top: 20px;
   word-spacing: 0.2em;
   line-height: 1.4em; }
+
+p {
+  text-align: center; }
+
+.iniciales {
+  font-size: 3em;
+  display: inline; }
 
 .imagenespaquete {
   width: 13.75em;
@@ -502,4 +515,17 @@ h2 {
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .grid {
-    background-size: fixed; } }
+    background-size: fixed; }
+  header {
+    height: 21em; }
+  .header__logo {
+    display: block;
+    width: 5em; }
+  nav {
+    margin-top: 2em; }
+  ul li {
+    width: 8em;
+    font-size: 1,2rem; }
+  .grid1 {
+    margin-top: 2em;
+    grid-column-gap: 0em; } }
