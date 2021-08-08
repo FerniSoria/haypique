@@ -41,13 +41,13 @@
 .incluye{
     grid-area:incluye;
     border-radius: 0.313em;
-    padding: 1em;
+    padding: 1rem;
     width: 100%;
 }
 .comodidades{
     grid-area:comodidades;
-    border-radius: 5.008px;
-    padding: 16px;
+    border-radius: 0.313rem;
+    padding: 1rem;
 }
 .fotospaquete{
     
@@ -104,6 +104,7 @@
 .texto__paquete{
     font-size: 1em;
     font-family: sans-serif;
+    text-align: center;
 }
 .paqueteul paqueteli{
     position: relative;

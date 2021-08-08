@@ -24,7 +24,21 @@
         width: 100%;
         
     }
-    
+    .grid1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 1em;
+        margin-top: 2em;
+        div{
+            padding: 1em;
+            margin: 1em;
+            align-content: center auto;
+        }
+    }
+    .grid1__li__nosotros{
+        width: 50%;
+    }
     /*nav{
         text-align: center;
         margin-top: 3.1em;
@@ -109,6 +123,21 @@
         grid-template-rows: 1fr 1fr 1fr 1fr;
         width: 100%;      
     }
+    .grid1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 1em;
+        margin-top: 2em;
+        div{
+            padding: 1em;
+            margin: 1em;
+            align-content: center auto;
+        }
+    }
+    .grid1__li__nosotros{
+        width: 50%;
+    }
     .grid2 {
         display: grid;
         grid-template-columns: 1fr;
@@ -120,19 +149,31 @@
         width: 8em;
         font-size: 1.2rem;
     }*/
+    
     .contenedorpaquete{
-        width: 90%;
+        width: 80%;
         max-width: 62.5em;
         margin: 1.25em auto;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(1fr, 1fr, 1fr, 1fr);
+        grid-template-rows: repeat(1fr);
         grid-template-areas: 
-            "logopaquete navpaquete navpaquete navpaquete"
-            "incluye incluye comodidades comodidades"
-            "fotospaquete fotospaquete fotospaquete fotospaquete"
+            "logopaquete" 
+            "navpaquete"
+            "incluye incluye" 
+            "comodidades comodidades"
+            "fotospaquete fotospaquete" 
+            "fotospaquete fotospaquete"
             "footerpaquete footerpaquete footerpaquete footerpaquete";
         grid-gap: 0.625em;
     }
+    /* AGREGUE ESTO*/
+    .paqueteul{
+        padding-inline-start: 0em;
+    }
+    .incluye{
+        padding: 0.1em;
+    }
+    
 }
 @media only screen and (min-width: 792px) and (max-width: 1007px)
     {
@@ -164,6 +205,18 @@
     .grid{
         grid-column-gap: 1em;
     }
+    .grid1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 1em;
+        margin-top: 2em;
+        div{
+            padding: 1em;
+            margin: 1em;
+            align-content: center auto;
+        }
+    }
 }
 
 @media only screen and (min-width:1008px) and (max-width:1199px)
@@ -179,7 +232,21 @@
       
         background-size: fixed;
     }
-    
+    .grid1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 1em;
+        margin-top: 2em;
+        div{
+            padding: 1em;
+            margin: 1em;
+            align-content: center auto;
+        }
+    }
+    .grid1__li__nosotros{
+        width: 50%;
+    }
     .header__logo {
         display: block;
         width: 7%;
@@ -224,7 +291,7 @@
         margin-left: 65%;
     }
     .header__proAnglers {
-        margin-left: 37%;
+        margin-left: 66%;
     }    
     /*nav{
         margin-top: 2.2rem;
