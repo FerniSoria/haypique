@@ -217,6 +217,19 @@
             align-content: center auto;
         }
     }
+    .contenedorpaquete{
+        width: 90%;
+        max-width: 62.5em;
+        margin: 1.25em auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+            "logopaquete navpaquete navpaquete"
+            "incluye comodidades comodidades"
+            "fotospaquete fotospaquete fotospaquete"
+            "footerpaquete footerpaquete footerpaquete";
+        grid-gap: 0.625em;
+    }
 }
 
 @media only screen and (min-width:1008px) and (max-width:1199px)

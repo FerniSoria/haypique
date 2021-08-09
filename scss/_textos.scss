@@ -1,13 +1,7 @@
 
-
-.grid__notas{
-    text-align: center;
-    margin: 1.25em 0 0.625em;
-    word-spacing: 0.2em;
-    line-height: 1.3em;
-
+body div p{
+    text-align: justify;
 }
-
 h1{
     color:rgb(14, 1, 1);
     text-align: center;
@@ -24,6 +18,16 @@ h4{
     font-style: italic;
     text-align: center;
 }
+
+.grid__notas{
+    text-align: center;
+    margin: 1.25em 0 0.625em;
+    word-spacing: 0.2em;
+    line-height: 1.3em;
+
+}
+
+
 .grid__titulo{
     font-size: 20px;
     
@@ -78,6 +82,4 @@ p{
 .grid2__parrafo{
     text-align: center;
 }
-/*p::first-letter{
-    font-size: 2.5rem;
-}*/
+
