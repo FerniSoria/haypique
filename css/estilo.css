@@ -17,23 +17,6 @@ body {
   font-family: sans-serif;
   font-size: 16px; }
 
-.grid__links {
-  display: block;
-  background: #2b455c;
-  padding: 13px 0;
-  color: #fafaf6;
-  border-radius: 5px;
-  text-align: center;
-  width: 150px;
-  margin: 0 auto;
-  margin-top: 10px;
-  text-decoration: none;
-  margin-bottom: 4px;
-  color: #ffffff;
-  transition: all 1s ease; }
-  .grid__links:hover {
-    transform: scale(1.1, 1.1); }
-
 .row {
   display: flex;
   padding: 5px; }
@@ -61,47 +44,7 @@ footer {
   .footer__iconos:hover {
     transform: scale(1.1, 1.1); }
 
-/*nav{
-    background-color: rgb(43, 69, 92);
-    width: 100%;
-    text-align: center;
-    margin-top: 4.1rem;
-    height: 2em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-}   
-ul{ 
-    list-style: none;
-    font-size: 0px;
-    ul{
-        position: absolute;
-        display: none;
-        li{
-         display: block;
-         &:hover ul {
-            display: block;
-            background-color:rgb(43, 69, 92);
-                    }
-          }
-      }
-li{
-    display: inline-block;
-    width: 10em;
-    position: relative;
-    font-size: 1.4rem;
-    a{
-        color: #ffffff;
-        text-decoration: none;
-        padding: 10px;
-        &:hover{
-            color: #000000;
-               }
-    }
-}
-}
-.navpaquete{
-    width: 80%;
-}*/
+/*  Todos los estilos del menu Nav de Boostraps*/
 nav {
   background-color: #2b455c; }
 
@@ -189,8 +132,9 @@ img {
 
 #button-navbar {
   color: white;
-  background-color: red; }
+  background-color: #ffffff; }
 
+/* Aca estan todos los estilos de las Grillas*/
 .contenedor {
   display: block;
   width: 30%;
@@ -211,6 +155,23 @@ img {
     .grid div:hover {
       box-shadow: 0 20px 40px; }
 
+.grid__links {
+  display: block;
+  background: #2b455c;
+  padding: 13px 0;
+  color: #fafaf6;
+  border-radius: 5px;
+  text-align: center;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-decoration: none;
+  margin-bottom: 4px;
+  color: #ffffff;
+  transition: all 1s ease; }
+  .grid__links:hover {
+    transform: scale(1.1, 1.1); }
+
 .grid1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -222,6 +183,12 @@ img {
     margin: 2em;
     align-content: center auto; }
 
+.grid1__li__nosotros {
+  display: inline-block;
+  width: 15rem;
+  position: relative;
+  font-size: 16px; }
+
 .grid2 {
   display: grid;
   grid-template-columns: 1fr;
@@ -231,35 +198,14 @@ img {
     margin: 3em;
     align-content: center auto; }
 
-.grid1__li__nosotros {
-  display: inline-block;
-  width: 15rem;
-  position: relative;
-  font-size: 16px; }
-
 .container {
   width: 100%;
   max-width: 1000px;
   margin: auto;
   padding: 1em;
   background-color: white;
-  margin-top: 6em;
+  margin-top: 2em;
   border-top: 0.5em solid #2b455c; }
-
-/*OPERACIONES*/
-.container__imga {
-  width: 6.5em;
-  border: black 3px solid;
-  float: left; }
-
-.container__imgb {
-  width: 19em;
-  border: steelblue 5px dotted;
-  float: right; }
-
-.container__imgc {
-  width: 13em;
-  float: left; }
 
 /* MAPS*/
 h3 {
@@ -268,18 +214,7 @@ h3 {
 h4 {
   font-size: 1em; }
 
-.texto1 {
-  font-size: 1em; }
-
-.texto2 {
-  font-size: 2em; }
-
-.texto3 {
-  font-size: 3em; }
-
-body div p {
-  text-align: justify; }
-
+/* Todos los estilos de los textos de cada grid, parrafo, h1, etc, ordenados de menor a mayor especificidad*/
 h1 {
   color: #0e0101;
   text-align: center;
@@ -294,6 +229,12 @@ h4 {
   font-size: .7em;
   font-style: italic;
   text-align: center; }
+
+p {
+  text-align: left; }
+
+body div p {
+  text-align: justify; }
 
 .grid__notas {
   text-align: center;
@@ -332,20 +273,17 @@ h4 {
   margin-bottom: 2em;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
 
-.container p {
-  margin-top: 20px;
-  word-spacing: 0.2em;
-  line-height: 1.4em; }
-
-p {
-  text-align: left; }
-
 .iniciales {
   font-size: 3em;
   display: inline; }
 
 .grid2__parrafo {
   text-align: center; }
+
+.container p {
+  margin-top: 20px;
+  word-spacing: 0.2em;
+  line-height: 1.4em; }
 
 .imagenespaquete {
   width: 100%;
@@ -393,7 +331,8 @@ p {
 .comodidades {
   grid-area: comodidades;
   border-radius: 0.313rem;
-  padding: 1rem; }
+  padding: 1rem;
+  width: 100%; }
 
 .fotospaquete {
   grid-area: fotospaquete;
@@ -479,6 +418,16 @@ p {
     height: 50%; }
   .header__titulo {
     font-size: 2em; }
+  .header__logo {
+    display: block;
+    width: 7%;
+    margin-left: 65%;
+    margin-top: 12%; }
+  .header__proAnglers {
+    margin-left: 45%;
+    color: red; }
+  h1 {
+    font-size: 12px; }
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -495,38 +444,11 @@ p {
       align-content: center auto; }
   .grid1__li__nosotros {
     width: 50%; }
-  /*nav{
-        text-align: center;
-        margin-top: 3.1em;
-        height: 1em;
-        font-family: 'Times New Roman', Times, serif;
-        width: 100%;
-        
-    }   
-    li{
-        display: inline-block;
-        width: 13em;
-        position: relative;
-        font-size: 0.4em;
-    }*/
-  h1 {
-    color: #080000;
-    font-size: 1px; }
-  .header__logo {
-    display: block;
-    width: 7%;
-    margin-left: 65%;
-    margin-top: 12%; }
-  h1 {
-    font-size: 12px; }
-  .header__proAnglers {
-    margin-left: 45%;
-    color: red; }
   .contenedorpaquete {
     width: 90%;
     max-width: 62.5em;
     margin: 1.25em auto;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(1fr, 1fr, 1fr, 1fr);
     grid-template-areas: "logopaquete navpaquete navpaquete navpaquete" "incluye incluye comodidades comodidades" "fotospaquete fotospaquete fotospaquete fotospaquete" "footerpaquete footerpaquete footerpaquete footerpaquete";
     grid-gap: 0.625em; } }
@@ -543,14 +465,6 @@ p {
     margin-top: 19%; }
   .header__proAnglers {
     margin-left: 40%; }
-  /*nav{
-        background-color: #2b455c;
-        text-align: center;
-        margin-top: 0.2em;
-        height: 2.1em;
-        font-family: 'Times New Roman', Times, serif;
-        width: 100%;
-    }*/
   h1 {
     color: white;
     font-size: 12px; }
@@ -577,19 +491,14 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr;
     grid-column-gap: 3em; }
-  /*ul li {
-        width: 8em;
-        font-size: 1.2rem;
-    }*/
   .contenedorpaquete {
     width: 80%;
     max-width: 62.5em;
     margin: 1.25em auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1fr);
-    grid-template-areas: "logopaquete"  "navpaquete" "incluye incluye"  "comodidades comodidades" "fotospaquete fotospaquete"  "fotospaquete fotospaquete" "footerpaquete footerpaquete footerpaquete footerpaquete";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(1fr, 1fr, 1fr, 1fr);
+    grid-template-areas: "logopaquete navpaquete navpaquete navpaquete" "incluye incluye comodidades comodidades" "fotospaquete fotospaquete fotospaquete fotospaquete" "footerpaquete footerpaquete footerpaquete footerpaquete";
     grid-gap: 0.625em; }
-  /* AGREGUE ESTO*/
   .paqueteul {
     padding-inline-start: 0em; }
   .incluye {
@@ -606,14 +515,6 @@ p {
     margin-left: 64%; }
   .header__proAnglers {
     margin-left: 37%; }
-  /*nav{
-        margin-top: 4rem;
-        height: 1.6em;
-    }
-    ul li {
-        width: 8em;
-        font-size: 1.3;
-    }*/
   .grid {
     grid-column-gap: 1em; }
   .grid1 {
@@ -636,9 +537,6 @@ p {
     grid-gap: 0.625em; } }
 
 @media only screen and (min-width: 1008px) and (max-width: 1199px) {
-  /*nav{
-        margin-top: 0.3rem;
-    }*/
   .header__titulo {
     font-size: 350%; }
   .grid {
@@ -661,11 +559,6 @@ p {
     margin-left: 65%; }
   .header__proAnglers {
     margin-left: 38%; }
-  /*ul li {
-        width: 8em;
-        font-size: 1,2rem;
-
-    }*/
   .grid1 {
     margin-top: 2em;
     grid-column-gap: 0em; } }
@@ -676,9 +569,6 @@ p {
     margin-left: 64%; }
   .header__proAnglers {
     margin-left: 36%; }
-  /*nav {
-        margin-top: 2.5rem;
-    }*/
   .header__titulo {
     font-size: 400%; } }
 
@@ -688,8 +578,5 @@ p {
     margin-left: 65%; }
   .header__proAnglers {
     margin-left: 66%; }
-  /*nav{
-        margin-top: 2.2rem;
-    }*/
   .footer__iconos {
     margin-left: 8px; } }
