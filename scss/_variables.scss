@@ -6,24 +6,6 @@ $headings:(
     h4: 1em,
 );
 
-/*OPERACIONES*/
-.container__imga{
-    width: $ancho/2 ;
-    border: black 3px solid;
-    float: left;
-}
-
-.container__imgb{
-    width: ($ancho*2)-7;
-    border: steelblue 5px dotted;
-    float: right;
-}
-.container__imgc{
-    width: 13em;
-    float: left;
-    
-}
-
 /* MAPS*/
 $h3: map-get($headings, h3);
 
@@ -35,8 +17,3 @@ h3 {
 h4{
     font-size: $h4;
 }
-@for $i from 1 through 3{
-    .texto#{$i}
-    {
-        font-size: 1em * $i;}
-    }

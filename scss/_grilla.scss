@@ -1,3 +1,4 @@
+/* Aca estan todos los estilos de las Grillas*/
 .contenedor{
     display: block;
     width: 30%;
@@ -19,6 +20,24 @@
                 box-shadow: 0 20px 40px;}
     }
 }
+.grid__links{
+    display: block;
+    background: rgb(43, 69, 92);
+    padding: 13px 0;
+    color: rgb(250, 250, 246);
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-decoration: none;
+    margin-bottom: 4px;
+    color: #ffffff;
+    transition: all 1s ease;
+    &:hover{
+       transform: scale(1.1, 1.1)
+    }
+}
 .grid1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -30,6 +49,13 @@
         margin: 2em;
         align-content: center auto;
     }
+}
+.grid1__li__nosotros{
+
+    display: inline-block;
+    width: 15rem;
+    position: relative;
+    font-size: 16px;
 }
 .grid2{
     display: grid;
@@ -43,20 +69,14 @@
         align-content: center auto;
     }
 }
-.grid1__li__nosotros{
 
-    display: inline-block;
-    width: 15rem;
-    position: relative;
-    font-size: 16px;
-}
 .container{
     width: 100%;
     max-width: 1000px;
     margin: auto;
     padding: 1em;
     background-color: white;
-    margin-top: 6em;
+    margin-top: 2em;
     border-top: 0.5em solid rgb(43, 69, 92);
 
 }

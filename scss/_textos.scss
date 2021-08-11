@@ -1,7 +1,6 @@
+/* Todos los estilos de los textos de cada grid, parrafo, h1, etc, ordenados de menor a mayor especificidad*/
 
-body div p{
-    text-align: justify;
-}
+
 h1{
     color:rgb(14, 1, 1);
     text-align: center;
@@ -18,19 +17,20 @@ h4{
     font-style: italic;
     text-align: center;
 }
-
+p{
+    text-align: left;
+}
+body div p{
+    text-align: justify;
+}
 .grid__notas{
     text-align: center;
     margin: 1.25em 0 0.625em;
     word-spacing: 0.2em;
     line-height: 1.3em;
-
 }
-
-
 .grid__titulo{
     font-size: 20px;
-    
 }
 .grid1__listado{ 
     font-size: 0.5em; 
@@ -40,8 +40,7 @@ h4{
     text-align: left;
     font-style: italic;
     padding-bottom: 0.2em;
-    
-    
+        
 }
 .TextoGaleriaFotos{
     font-size: 3em;
@@ -49,31 +48,18 @@ h4{
     margin-bottom: 2em;
     font-style: italic;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 .header__titulo{
     color: #ffffff;
     text-align: end;
     margin-right: 1em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 400%;
-    
-    }
+    font-size: 400%;   
+}
 .container__titulo{
     font-size: 2.5em;
     margin-bottom: 2em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-}
-.container p{
-    margin-top: 20px;
-    word-spacing: 0.2em;
-    line-height: 1.4em;
-    
-}
-
-p{
-    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
 }
 .iniciales{
     font-size: 3em;
@@ -82,4 +68,8 @@ p{
 .grid2__parrafo{
     text-align: center;
 }
-
+.container p{
+    margin-top: 20px;
+    word-spacing: 0.2em;
+    line-height: 1.4em;    
+}
