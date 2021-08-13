@@ -73,10 +73,11 @@
 .container{
     width: 100%;
     max-width: 1000px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8em;
     padding: 1em;
     background-color: white;
-    margin-top: 2em;
     border-top: 0.5em solid rgb(43, 69, 92);
 
 }

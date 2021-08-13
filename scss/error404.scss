@@ -14,9 +14,19 @@
 .error-mensaje__container{
     text-align: center;
     color: white;
+   
+    width: 30%;
+    height: 15%;
     h1{
-        font-size: 3em;
+        font-size: 5em;
         color: white;
     }
-    p{font-size: 1em;}
+    p{font-size: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+    
+    }
+    a{
+        color: white;
+    }
 }
