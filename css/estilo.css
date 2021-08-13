@@ -196,10 +196,11 @@ img {
 .container {
   width: 100%;
   max-width: 1000px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8em;
   padding: 1em;
   background-color: white;
-  margin-top: 2em;
   border-top: 0.5em solid #2b455c; }
 
 /* MAPS*/
@@ -288,8 +289,10 @@ body div p {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5rem;
+  margin-bottom: 3rem;
   background-color: rgba(43, 69, 92, 0.8);
-  border-radius: 0.625rem; }
+  border-radius: 0.625rem;
+  background-color: #ccc; }
 
 .introduccion__parrafo {
   margin: 0, 12px, 0, 12px;
@@ -439,12 +442,18 @@ body div p {
 
 .error-mensaje__container {
   text-align: center;
-  color: white; }
+  color: white;
+  width: 30%;
+  height: 15%; }
   .error-mensaje__container h1 {
-    font-size: 3em;
+    font-size: 5em;
     color: white; }
   .error-mensaje__container p {
-    font-size: 1em; }
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 1em; }
+  .error-mensaje__container a {
+    color: white; }
 
 /*MEDIA O RESPONSIVE O MOBIL FIRST*/
 @media screen and (min-width: 382px) and (max-width: 640px) {
