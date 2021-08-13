@@ -4,7 +4,6 @@
   box-sizing: border-box; }
 
 header {
-  color: black;
   background-image: url(../imagenes/tapa3.jpg);
   height: 50%;
   background-position: left top;
@@ -36,14 +35,6 @@ footer {
   height: 36px;
   color: white; }
 
-.footer__iconos {
-  width: 30px;
-  margin-top: 3px;
-  margin-left: 8px;
-  transition: all 1s ease; }
-  .footer__iconos:hover {
-    transform: scale(1.1, 1.1); }
-
 /*  Todos los estilos del menu Nav de Boostraps*/
 nav {
   background-color: #2b455c; }
@@ -52,7 +43,7 @@ nav {
   width: 30px; }
 
 #proanglers__navbar {
-  color: red;
+  color: #ff0808;
   font-size: 100%; }
 
 #nav__letra {
@@ -61,6 +52,7 @@ nav {
   font-size: 1.3rem;
   margin-left: 3.75rem; }
 
+/* Todos las imagenes de cada html*/
 .header__logo {
   display: block;
   width: 7%;
@@ -71,7 +63,7 @@ nav {
   animation-iteration-count: infinite; }
 
 .header__proAnglers {
-  color: #fa0808;
+  color: #ff0808;
   margin-left: 63.5%;
   margin-top: -1%; }
 
@@ -86,7 +78,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 22.5em;
+  width: 21.5em;
   height: 35.063em; }
 
 @keyframes logo {
@@ -129,6 +121,14 @@ img {
   color: white;
   background-color: #ffffff; }
 
+.footer__iconos {
+  width: 30px;
+  margin-top: 3px;
+  margin-left: 8px;
+  transition: all 1s ease; }
+  .footer__iconos:hover {
+    transform: scale(1.1, 1.1); }
+
 /* Aca estan todos los estilos de las Grillas*/
 .contenedor {
   display: block;
@@ -152,7 +152,7 @@ img {
 
 .grid__links {
   display: block;
-  background: #2b455c;
+  background-color: #2b455c;
   padding: 13px 0;
   color: #fafaf6;
   border-radius: 5px;
@@ -211,7 +211,7 @@ h4 {
 
 /* Todos los estilos de los textos de cada grid, parrafo, h1, etc, ordenados de menor a mayor especificidad*/
 h1 {
-  color: #0e0101;
+  color: #2b455c;
   text-align: center;
   font-size: 4rem;
   font-family: sans-serif; }
@@ -260,7 +260,7 @@ body div p {
   color: #ffffff;
   text-align: end;
   margin-right: 1em;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: sans-serif;
   font-size: 400%; }
 
 .container__titulo {
@@ -280,6 +280,24 @@ body div p {
   word-spacing: 0.2em;
   line-height: 1.4em; }
 
+.introduccion {
+  padding-top: 1em;
+  border: 2px solid white;
+  width: 80%;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  background-color: #cce;
+  border-radius: 0.625rem; }
+
+.introduccion__parrafo {
+  margin: 0, 12px, 0, 12px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.3em; }
+
+/*toda el estilo de lugares.html*/
 .imagenespaquete {
   width: 100%;
   height: 80%;
@@ -297,7 +315,7 @@ body div p {
 
 .logopaquete {
   grid-area: logopaquete;
-  color: #ff0404;
+  color: #ff0808;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -402,13 +420,33 @@ body div p {
 
 .grid2__a {
   text-decoration: none;
-  color: black;
+  color: #ff0505;
   font-family: sans-serif; }
   .grid2__a:hover {
     text-decoration: underline; }
 
+.error-body {
+  background-image: linear-gradient(-255deg, #2b455c 0%, #60809b 51%, #8ca8be 100%); }
+
+.error-mensaje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 100px);
+  width: 100%; }
+
+.error-mensaje__container {
+  text-align: center;
+  color: white; }
+  .error-mensaje__container h1 {
+    font-size: 3em;
+    color: white; }
+  .error-mensaje__container p {
+    font-size: 1em; }
+
 /*MEDIA O RESPONSIVE O MOBIL FIRST*/
-@media screen and (min-width: 360px) and (max-width: 640px) {
+@media screen and (min-width: 382px) and (max-width: 640px) {
   header {
     height: 50%; }
   .header__titulo {
@@ -418,9 +456,6 @@ body div p {
     width: 7%;
     margin-left: 65%;
     margin-top: 12%; }
-  .header__proAnglers {
-    margin-left: 45%;
-    color: red; }
   h1 {
     font-size: 12px; }
   .grid {
@@ -439,6 +474,15 @@ body div p {
       align-content: center auto; }
   .grid1__li__nosotros {
     width: 50%; }
+  .grid2 {
+    width: 19.5em;
+    margin-left: 3em;
+    margin-right: auto; }
+    .grid2 div {
+      margin-left: 1em;
+      padding: 0.3em; }
+  .grid2__imagen {
+    width: 17.5em; }
   .contenedorpaquete {
     width: 90%;
     max-width: 62.5em;
@@ -460,10 +504,8 @@ body div p {
     width: 7%;
     margin-left: 64%;
     margin-top: 19%; }
-  .header__proAnglers {
-    margin-left: 40%; }
   h1 {
-    color: white;
+    color: #ffffff;
     font-size: 12px; }
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -510,8 +552,6 @@ body div p {
     display: block;
     width: 7%;
     margin-left: 64%; }
-  .header__proAnglers {
-    margin-left: 37%; }
   .grid {
     grid-column-gap: 1em; }
   .grid1 {
@@ -554,8 +594,6 @@ body div p {
     display: block;
     width: 7%;
     margin-left: 65%; }
-  .header__proAnglers {
-    margin-left: 38%; }
   .grid1 {
     margin-top: 2em;
     grid-column-gap: 0em; } }
@@ -564,8 +602,6 @@ body div p {
   .header__logo {
     width: 7%;
     margin-left: 64%; }
-  .header__proAnglers {
-    margin-left: 36%; }
   .header__titulo {
     font-size: 400%; } }
 
