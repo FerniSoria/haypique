@@ -1,7 +1,7 @@
 
 /*  Todos los estilos del menu Nav de Boostraps*/
 nav{
-    background-color: rgb(43, 69, 92);
+    @include fondoazul;
     
 
 }
@@ -9,7 +9,7 @@ nav{
     width: 30px;
 }
 #proanglers__navbar{
-    color: red;
+    @include colorletra;
     font-size: 100%;
 }
 

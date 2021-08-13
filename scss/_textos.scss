@@ -2,7 +2,7 @@
 
 
 h1{
-    color:rgb(14, 1, 1);
+    @include colorazul;
     text-align: center;
     font-size: 4rem;
     font-family: sans-serif;
@@ -53,7 +53,7 @@ body div p{
     color: #ffffff;
     text-align: end;
     margin-right: 1em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: sans-serif;
     font-size: 400%;   
 }
 .container__titulo{
@@ -72,4 +72,22 @@ body div p{
     margin-top: 20px;
     word-spacing: 0.2em;
     line-height: 1.4em;    
+}
+.introduccion{
+    
+    padding-top: 1em;
+    border: 2px solid white;
+    width: 80%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5rem;
+    background-color: #cce;
+    border-radius: 0.625rem;
+}
+.introduccion__parrafo{
+    margin:0, 12px, 0, 12px;
+    text-align: center; 
+    font-family: sans-serif;
+    font-size: 1.3em;
 }

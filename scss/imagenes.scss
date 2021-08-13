@@ -1,3 +1,4 @@
+/* Todos las imagenes de cada html*/
 .header__logo{
     display: block;
     width: 7%;
@@ -9,7 +10,7 @@
 }
 
 .header__proAnglers{
-    color: rgb(250, 8, 8);
+    @include colorletra ;
     margin-left: 63.5%;
     margin-top: -1%;
    
@@ -25,7 +26,7 @@
    margin-left: auto;
    margin-right: auto;
    display: block;
-    width: 22.5em;
+    width: 21.5em;
     height: 35.063em;
     
 }
@@ -78,4 +79,13 @@ img{
 #button-navbar{
     color: white;
     background-color:#ffffff;
+}
+.footer__iconos{
+    width: 30px;
+    margin-top: 3px;
+    margin-left: 8px;
+    transition: all 1s ease;
+    &:hover{
+       transform: scale(1.1, 1.1)
+}
 }
