@@ -9,29 +9,14 @@
 
 
 
-/*MEDIA O RESPONSIVE O MOBIL FIRST*/
-@media screen and (min-width: 382px) and (max-width: 640px)
+/*MEDIA O RESPONSIVE O MOBIL FIRST*. Acá si, bien no hacia falta, jugué bastante con las variables, para que me quede como mas me gusta segun cada MQ*/
+@media screen and (min-width: 360px) and (max-width: 640px)
     {
-    header{
-            height: 50%;
-            
-    }
+    
     .header__titulo{
         font-size: 2em;
     }
     
-    .header__logo{
-        display: block;
-        width: 7%;
-        margin-left: 65%;
-        margin-top: 12%;
-
-    }
-   
-
-    h1{
-        font-size: 12px;
-    }
     .grid{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -89,23 +74,9 @@
 @media only screen and (min-width: 641px) and (max-width: 791px)
 
 {
-    header{
-        height: 50%;
-    }
+    
     .header__titulo{
         font-size: 2em;
-    }
-    .header__logo{
-        display: block;
-        width: 7%;
-        margin-left: 64%;
-        margin-top: 19%;
-    } 
-    
-   
-    h1{ 
-        color: #ffffff;
-        font-size: 12px;
     }
     .grid{
         grid-template-columns: repeat(2,1fr);
@@ -159,22 +130,10 @@
 }
 @media only screen and (min-width: 792px) and (max-width: 1007px)
     {
-    header{
-        height: 50%;
-    }
+    
     .header__titulo{
         font-size: 300%;
     }
-
-    .header__logo {
-        display: block;
-        width: 7%;
-        margin-left: 64%;
-       
-    }
-    
-    
-    
     .grid{
         grid-column-gap: 1em;
     }
@@ -231,12 +190,6 @@
     .grid1__li__nosotros{
         width: 50%;
     }
-    .header__logo {
-        display: block;
-        width: 7%;
-        margin-left: 65%;
-    }
-   
 
     
     .grid1 {
@@ -247,27 +200,11 @@
 
 @media only screen and (min-width:1200px) and (max-width:1450px)
 {
-    .header__logo {
-        width: 7%;
-        margin-left: 64%;
-    }
     
-    
-    .header__titulo{
-        font-size: 400%;
-    }
 
 }
 @media only screen and (min-width:1451px) and (max-width:1950px)
 {
-    .header__logo {
-        width: 7em;
-        margin-left: 65%;
-    }
-    .header__proAnglers {
-        margin-left: 66%;
-    }    
-    
     .footer__iconos {
         margin-left: 8px;
     }    
