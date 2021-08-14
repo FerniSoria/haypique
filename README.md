@@ -1,5 +1,5 @@
 # haypique
-👨‍🦱 Soy Fernando Soria. En esta oportunidad, intentando hacer algo distinto a todas las web vistas, que han desarrollado en CoderHouse, quise hacer una de un tema distinto. Como practico Pesca Deportiva y tenia varias fotos de mi autoría, decidí ir por ese camino.
+👨‍🦱 Soy Fernando Soria, Soy Cordobes, padre de 2 hijos, Feli y Mateo, amante de la naturaleza, la pesca, el enduro y navegar. En esta oportunidad, intentando hacer algo distinto a todas las web vistas, que han desarrollado en CoderHouse, quise desarrollarla con un tema distinto al habitual. Como practico Pesca Deportiva y tenia varias fotos de mi autoría, decidí ir por ese camino.
 
 ✍ En este proyecto se utilizaron varias herramientas aprendidas a lo largo de este curso de Desarrollo Web, tales como Html, Css, Sass, Frameworks como Bootstrap ( a pesar de que intente no agregar nada de este frameworks, por el simple hecho de querer hacer todo yo, igualmente agregue el nav bar para cumplimentar la consigna). También implemente todas las medidas de SEO, intente usar metodología Bem, para el orden, que este todo bien maquetado y entendible para la tutora y la Docente.
 🛠Se utilizo la herramienta de Lighthouse, para poder optimizar y pude obtener muy buenos resultyados, 100% en Performance, 95% en Accessibility, 100% en Best Practices como también 100% en SEO.
