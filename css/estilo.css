@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +19,9 @@ body {
 
 .row {
   display: flex;
-  padding: 5px; }
+  padding: 5px;
+  margin-right: 3px;
+  margin-left: 3px; }
 
 .column {
   flex: 25%;
@@ -108,14 +111,14 @@ img {
   margin-top: 1.2em;
   float: left;
   margin-right: 1.2em;
-  width: 25em; }
+  width: 19em; }
 
 .container__img1 {
   margin-bottom: 1.2em;
   margin-top: 1.2em;
   float: right;
   margin-left: 1.2em;
-  width: 20em; }
+  width: 15em; }
 
 #button-navbar {
   color: white;
@@ -291,8 +294,7 @@ body div p {
   margin-top: 5rem;
   margin-bottom: 3rem;
   background-color: rgba(43, 69, 92, 0.8);
-  border-radius: 0.625rem;
-  background-color: #ccc; }
+  border-radius: 0.625rem; }
 
 .introduccion__parrafo {
   margin: 0, 12px, 0, 12px;
@@ -455,19 +457,10 @@ body div p {
   .error-mensaje__container a {
     color: white; }
 
-/*MEDIA O RESPONSIVE O MOBIL FIRST*/
-@media screen and (min-width: 382px) and (max-width: 640px) {
-  header {
-    height: 50%; }
+/*MEDIA O RESPONSIVE O MOBIL FIRST*. Acá si, bien no hacia falta, jugué bastante con las variables, para que me quede como mas me gusta segun cada MQ*/
+@media screen and (min-width: 360px) and (max-width: 640px) {
   .header__titulo {
     font-size: 2em; }
-  .header__logo {
-    display: block;
-    width: 7%;
-    margin-left: 65%;
-    margin-top: 12%; }
-  h1 {
-    font-size: 12px; }
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -505,18 +498,8 @@ body div p {
     font-size: 1.5em; } }
 
 @media only screen and (min-width: 641px) and (max-width: 791px) {
-  header {
-    height: 50%; }
   .header__titulo {
     font-size: 2em; }
-  .header__logo {
-    display: block;
-    width: 7%;
-    margin-left: 64%;
-    margin-top: 19%; }
-  h1 {
-    color: #ffffff;
-    font-size: 12px; }
   .grid {
     grid-template-columns: repeat(2, 1fr);
     background-size: fixed;
@@ -554,14 +537,8 @@ body div p {
     padding: 0.1em; } }
 
 @media only screen and (min-width: 792px) and (max-width: 1007px) {
-  header {
-    height: 50%; }
   .header__titulo {
     font-size: 300%; }
-  .header__logo {
-    display: block;
-    width: 7%;
-    margin-left: 64%; }
   .grid {
     grid-column-gap: 1em; }
   .grid1 {
@@ -600,26 +577,10 @@ body div p {
       align-content: center auto; }
   .grid1__li__nosotros {
     width: 50%; }
-  .header__logo {
-    display: block;
-    width: 7%;
-    margin-left: 65%; }
   .grid1 {
     margin-top: 2em;
     grid-column-gap: 0em; } }
 
-@media only screen and (min-width: 1200px) and (max-width: 1450px) {
-  .header__logo {
-    width: 7%;
-    margin-left: 64%; }
-  .header__titulo {
-    font-size: 400%; } }
-
 @media only screen and (min-width: 1451px) and (max-width: 1950px) {
-  .header__logo {
-    width: 7em;
-    margin-left: 65%; }
-  .header__proAnglers {
-    margin-left: 66%; }
   .footer__iconos {
     margin-left: 8px; } }
